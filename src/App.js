@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import { BASE_URL } from './constants'
 import Character from './components/Character'
+import styled from 'styled-components'
 import './App.css';
 
 const App = () => {
