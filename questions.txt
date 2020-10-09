@@ -1,0 +1,12 @@
+1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+React is a library that solves the organizational crisis in the 'seperation of purpose' principle; by combining JS, HTML, and CSS into single-sheet components and combining many components to make a fully functional app. This allows developers to streamline information flow and makes the process of going back and reskinning a project easier to manage.
+
+1. Describe component state.
+State is how an element renders at any given point; be it null onload or initiliazing to an image after refresh -- state defines what an element should be doing. The purpose of state is to change, providing functionality to the component itself or to components downstream that will change based on the state of other pieces. 
+
+1. Describe props.
+Props are pieces of stored information that can be passed from parent to child in order to move data down the tree.
+
+1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+Side effects is anything that affects something outside of the scope of the function being executed. The effect hook allows the developer to create complex functionality in conjuction with state and data.
