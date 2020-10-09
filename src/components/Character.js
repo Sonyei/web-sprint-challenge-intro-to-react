@@ -2,15 +2,23 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-const Details = ({ toon }) => {
-    return (
+
+
+const Character = ({name, gender, species, origin, location, status, image}) => {
+
+return (
+    <div>
+    <img src={image} />
         <div>
-            <p>Name: {toon.name}</p>
-            <p>Gender: {toon.gender}</p>
-            <p>Species: {toon.species}</p>
-            <p>Origin: {toon.origin}</p>
-            <p>Location{toon.location.name}</p>
-            <p>Status: {toon.status}</p>
+            <p>Name: {name}</p>
+            <p>Gender: {gender}</p>
+            <p>Species: {species}</p>
+            <p>Origin: {origin}</p>
+            <p>Location{location}</p>
+            <p>Status: {status}</p>
+        </div>
         </div>
     )
 }
+
+export default Character

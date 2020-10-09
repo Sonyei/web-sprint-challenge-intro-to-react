@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import { BASE_URL } from './constants'
+import Character from './components/Character'
 import './App.css';
 
 const App = () => {
@@ -24,12 +25,19 @@ axios.get(`${BASE_URL}`)
   })
 }, [])
 
-
-  return (
+    return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">Rick & Morty Toons</h1>
+      <div className="characters">
+        {char.map(char => {
+          return (
+            <Character name= {char.name} gender= {char.gender} species= {char.species} origin= {char.origin.name} location={char.location.name} status= {char.status} image= {char.image} key={char.id}/>
+          );
+        })}
+      </div>
     </div>
-  );
+    )
 }
+
 
 export default App;
